@@ -1,0 +1,471 @@
+@font-face {
+    font-family: "tokyo";
+    src: url(/assets/Japanese3017-Eljn.ttf);
+}
+
+@font-face {
+    font-family: "brush";
+    src: url(/assets/Good\ Brush.ttf);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", serif;
+}
+
+body {
+    background: radial-gradient(
+            50% 50% at 100% 0,
+            #1d1d2e 0% 5%,
+            #070f2b 6% 15%,
+            #1d1d2e 16% 25%,
+            #070f2b 26% 35%,
+            #1d1d2e 36% 45%,
+            #070f2b 46% 55%,
+            #1d1d2e 56% 65%,
+            #070f2b 66% 75%,
+            #1d1d2e 76% 85%,
+            #070f2b 86% 95%,
+            #0000 96%
+        ),
+        radial-gradient(
+            50% 50% at 0 100%,
+            #1d1d2e 0% 5%,
+            #070f2b 6% 15%,
+            #1d1d2e 16% 25%,
+            #070f2b 26% 35%,
+            #1d1d2e 36% 45%,
+            #070f2b 46% 55%,
+            #1d1d2e 56% 65%,
+            #070f2b 66% 75%,
+            #1d1d2e 76% 85%,
+            #070f2b 86% 95%,
+            #0000 96%
+        ),
+        radial-gradient(
+            50% 50%,
+            #1d1d2e 0% 5%,
+            #070f2b 6% 15%,
+            #1d1d2e 16% 25%,
+            #070f2b 26% 35%,
+            #1d1d2e 36% 45%,
+            #070f2b 46% 55%,
+            #1d1d2e 56% 65%,
+            #070f2b 66% 75%,
+            #1d1d2e 76% 85%,
+            #070f2b 86% 95%,
+            #0000 96%
+        ),
+        radial-gradient(
+                50% 50%,
+                #1d1d2e 0% 5%,
+                #070f2b 6% 15%,
+                #1d1d2e 16% 25%,
+                #070f2b 26% 35%,
+                #1d1d2e 36% 45%,
+                #070f2b 46% 55%,
+                #1d1d2e 56% 65%,
+                #070f2b 66% 75%,
+                #1d1d2e 76% 85%,
+                #070f2b 86% 95%,
+                #0000 96%
+            )
+            30px 30px;
+    background-size: 60px 60px;
+    background-color: #1d1d2e;
+}
+
+.navbar {
+    background: #070f2b;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    border-bottom: 2px solid #606096;
+    z-index: 10000;
+}
+
+.navbar_container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+#navbar_logo {
+    background-color: #000000;
+    background-image: linear-gradient(to top, #bfc3d5 0%, #24216e 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: "tokyo";
+}
+
+.navbar_menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar_items {
+    height: 80px;
+}
+
+.navbar_links {
+    color: #9290c3;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.navbar_links:hover {
+    color: #ffffff;
+}
+
+.navbar_btn {
+    display: flex;
+    justify-content: center;
+    padding: 0 1rem;
+    width: 100%;
+    align-items: center;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #535c91;
+    color: #070f2b;
+    transition: 0.3s;
+}
+
+.button:hover {
+    color: #ffffff;
+    background: #1b1a55;
+}
+
+.container {
+    border-top: 2px solid #606096;
+    border-bottom: 2px solid #606096;
+    background: radial-gradient(
+            50% 50% at 100% 0,
+            #606096 0% 5%,
+            #070f2b 6% 15%,
+            #606096 16% 25%,
+            #070f2b 26% 35%,
+            #606096 36% 45%,
+            #070f2b 46% 55%,
+            #606096 56% 65%,
+            #070f2b 66% 75%,
+            #606096 76% 85%,
+            #070f2b 86% 95%,
+            #0000 96%
+        ),
+        radial-gradient(
+            50% 50% at 0 100%,
+            #606096 0% 5%,
+            #070f2b 6% 15%,
+            #606096 16% 25%,
+            #070f2b 26% 35%,
+            #606096 36% 45%,
+            #070f2b 46% 55%,
+            #606096 56% 65%,
+            #070f2b 66% 75%,
+            #606096 76% 85%,
+            #070f2b 86% 95%,
+            #0000 96%
+        ),
+        radial-gradient(
+            50% 50%,
+            #606096 0% 5%,
+            #070f2b 6% 15%,
+            #606096 16% 25%,
+            #070f2b 26% 35%,
+            #606096 36% 45%,
+            #070f2b 46% 55%,
+            #606096 56% 65%,
+            #070f2b 66% 75%,
+            #606096 76% 85%,
+            #070f2b 86% 95%,
+            #0000 96%
+        ),
+        radial-gradient(
+                50% 50%,
+                #606096 0% 5%,
+                #070f2b 6% 15%,
+                #606096 16% 25%,
+                #070f2b 26% 35%,
+                #606096 36% 45%,
+                #070f2b 46% 55%,
+                #606096 56% 65%,
+                #070f2b 66% 75%,
+                #606096 76% 85%,
+                #070f2b 86% 95%,
+                #0000 96%
+            )
+            30px 30px;
+    background-size: 60px 60px;
+    background-color: #606096;
+}
+
+.title {
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    font-family: "brush";
+    background: radial-gradient(
+            50% 50% at 100% 0,
+            #1d1d2e 0% 5%,
+            #070f2b 6% 15%,
+            #1d1d2e 16% 25%,
+            #070f2b 26% 35%,
+            #1d1d2e 36% 45%,
+            #070f2b 46% 55%,
+            #1d1d2e 56% 65%,
+            #070f2b 66% 75%,
+            #1d1d2e 76% 85%,
+            #070f2b 86% 95%,
+            #0000 96%
+        ),
+        radial-gradient(
+            50% 50% at 0 100%,
+            #1d1d2e 0% 5%,
+            #070f2b 6% 15%,
+            #1d1d2e 16% 25%,
+            #070f2b 26% 35%,
+            #1d1d2e 36% 45%,
+            #070f2b 46% 55%,
+            #1d1d2e 56% 65%,
+            #070f2b 66% 75%,
+            #1d1d2e 76% 85%,
+            #070f2b 86% 95%,
+            #0000 96%
+        ),
+        radial-gradient(
+            50% 50%,
+            #1d1d2e 0% 5%,
+            #070f2b 6% 15%,
+            #1d1d2e 16% 25%,
+            #070f2b 26% 35%,
+            #1d1d2e 36% 45%,
+            #070f2b 46% 55%,
+            #1d1d2e 56% 65%,
+            #070f2b 66% 75%,
+            #1d1d2e 76% 85%,
+            #070f2b 86% 95%,
+            #0000 96%
+        ),
+        radial-gradient(
+                50% 50%,
+                #1d1d2e 0% 5%,
+                #070f2b 6% 15%,
+                #1d1d2e 16% 25%,
+                #070f2b 26% 35%,
+                #1d1d2e 36% 45%,
+                #070f2b 46% 55%,
+                #1d1d2e 56% 65%,
+                #070f2b 66% 75%,
+                #1d1d2e 76% 85%,
+                #070f2b 86% 95%,
+                #0000 96%
+            )
+            30px 30px;
+    background-size: 60px 60px;
+    background-color: #1d1d2e;
+}
+
+.map-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#map {
+    height: 450px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.area-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    border: 2px #070f2b solid;
+}
+
+.areas {
+    padding: 30px;
+    color: #ffffff;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.area-title {
+    font-family: "tokyo";
+    font-size: 2rem;
+}
+
+#area1,
+#area2,
+#area3 {
+    width: calc(100% / 3 - 20px);
+    background-color: rgb(36, 33, 110);
+    padding: 20px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 2px #070f2b solid;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    flex: 1;
+}
+
+.footer {
+    background-color: #070f2b;
+    color: #ffffff;
+    text-align: center;
+    padding: 5px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-top: #606096 3px solid;
+}
+
+.footer_container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer_links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer_links li {
+    display: inline;
+}
+
+.footer_links a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer_links a:hover {
+    text-decoration: underline;
+}
+
+.map_title {
+    background: radial-gradient(
+            50% 50% at 100% 0,
+            #1d1d2e 0% 5%,
+            #070f2b 6% 15%,
+            #1d1d2e 16% 25%,
+            #070f2b 26% 35%,
+            #1d1d2e 36% 45%,
+            #070f2b 46% 55%,
+            #1d1d2e 56% 65%,
+            #070f2b 66% 75%,
+            #1d1d2e 76% 85%,
+            #070f2b 86% 95%,
+            #0000 96%
+        ),
+        radial-gradient(
+            50% 50% at 0 100%,
+            #1d1d2e 0% 5%,
+            #070f2b 6% 15%,
+            #1d1d2e 16% 25%,
+            #070f2b 26% 35%,
+            #1d1d2e 36% 45%,
+            #070f2b 46% 55%,
+            #1d1d2e 56% 65%,
+            #070f2b 66% 75%,
+            #1d1d2e 76% 85%,
+            #070f2b 86% 95%,
+            #0000 96%
+        ),
+        radial-gradient(
+            50% 50%,
+            #1d1d2e 0% 5%,
+            #070f2b 6% 15%,
+            #1d1d2e 16% 25%,
+            #070f2b 26% 35%,
+            #1d1d2e 36% 45%,
+            #070f2b 46% 55%,
+            #1d1d2e 56% 65%,
+            #070f2b 66% 75%,
+            #1d1d2e 76% 85%,
+            #070f2b 86% 95%,
+            #0000 96%
+        ),
+        radial-gradient(
+                50% 50%,
+                #1d1d2e 0% 5%,
+                #070f2b 6% 15%,
+                #1d1d2e 16% 25%,
+                #070f2b 26% 35%,
+                #1d1d2e 36% 45%,
+                #070f2b 46% 55%,
+                #1d1d2e 56% 65%,
+                #070f2b 66% 75%,
+                #1d1d2e 76% 85%,
+                #070f2b 86% 95%,
+                #0000 96%
+            )
+            30px 30px;
+    background-size: 60px 60px;
+    background-color: #1d1d2e;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+
+.map_title {
+    font-family: "brush";
+}

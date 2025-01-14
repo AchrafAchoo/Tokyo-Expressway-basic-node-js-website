@@ -1,0 +1,79 @@
+[
+  {
+    "email": "abdellah@gmail.com",
+    "model": "Citroen C-Elysée",
+    "vin": "C9384927E",
+    "phone": "0748337298",
+    "terms": "on"
+  },
+  {
+    "email": "youssef@gmail.com",
+    "model": "Dacia Logan 1.3DCi ",
+    "vin": "D92429L",
+    "phone": "05849384024",
+    "terms": "on"
+  },
+  {
+    "email": "legmas@gmail.com",
+    "model": "Renault Capture 1.6DCi",
+    "vin": "C839849R",
+    "phone": "0783739843",
+    "terms": "on"
+  },
+  {
+    "email": "hiba@gmail.com",
+    "model": "Bentley Flying Spur",
+    "vin": "F84804B",
+    "phone": "083736378",
+    "terms": "on"
+  },
+  {
+    "email": "Souad@gmail.com",
+    "model": "Renault Clio 1.2DCi",
+    "vin": "C948497R",
+    "phone": "084647346",
+    "terms": "on"
+  },
+  {
+    "email": "Imane@gmail.com",
+    "model": "Ferrari 488 Pista",
+    "vin": "F873929P",
+    "phone": "074988946",
+    "terms": "on"
+  },
+  {
+    "email": "adnane@gmail.com",
+    "model": "Renault C15",
+    "vin": "R15837C",
+    "phone": "065873985",
+    "terms": "on"
+  },
+  {
+    "email": "Abdeljalil@gmail.com",
+    "model": "VW Touareg V10TDI",
+    "vin": "V108337T",
+    "phone": "084872847",
+    "terms": "on"
+  },
+  {
+    "email": "achraf.alla38@gmail.com",
+    "model": "ford",
+    "vin": "123",
+    "phone": "0663351531",
+    "terms": "on"
+  },
+  {
+    "email": "amine@gmail.com",
+    "model": "Ford Focus Sedan",
+    "vin": "F7261866G",
+    "phone": "077257122",
+    "terms": "on"
+  },
+  {
+    "email": "rayane@gmail.com",
+    "model": "Palio",
+    "vin": "G6257h",
+    "phone": "098627537",
+    "terms": "on"
+  }
+]

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExpressWay</title>
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar_container">
+            <a href="" id="navbar_logo">Tokyo Expressway</a>
+            <div class="navbar_toggle" id="mobile_menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar_menu">
+                <li class="navbar_item">
+                    <a href="/html/index.html" class="navbar_links">Home</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="/html/about.html" class="navbar_links">About</a>
+                </li>
+                <li class="navbar_btn">
+                    <a href="/html/crud.html" class="button">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <h1 class="title">Our Main Office Areas</h1>
+    <div class="container">
+        <div class="areas">
+            <div id="area1">
+                <h1 class="area-title">Shinjuku</h1>
+                <img class="area-img" src="/assets/iStock-Shinjuku-Kabukicho-Godzilla.jpg">
+                <p class="area-desc"></p>
+                Shinjuku Station is one of the busiest railway stations in the world, located in the Shinjuku ward of
+                Tokyo, Japan. It serves as a major hub for various train lines, including JR East, Odakyu Electric
+                Railway, Keio Corporation, and Tokyo Metro. The station is surrounded by numerous shopping,
+                entertainment, and business districts.
+            </div>
+            <div id="area2">
+                <h1 class="area-title">Katsushika</h1>
+                <img class="area-img" src="/assets/Shibamata_Taishakuten.jpg">
+                <p class="area-desc"></p>
+                Katsushika is a special ward located in the northeastern part of Tokyo, Japan. It is known for
+                its traditional atmosphere, historical sites, and beautiful parks. One of the most famous
+                attractions in Katsushika is the Shibamata Taishakuten, a Buddhist temple with a history dating back to
+                1629.
+            </div>
+            <div id="area3">
+                <h1 class="area-title">Edogawa</h1>
+                <img class="area-img" src="/assets/466411-Edogawa.webp">
+                <p class="area-desc"></p>
+                Edogawa is a ward located in the eastern part of Tokyo, Japan. It is known for its family-friendly
+                atmosphere, extensive parks, and riverside areas. One of the main attractions in Edogawa is the Edogawa
+                Natural Zoo, which offers free admission and is home to a variety of animals.
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="hero">
+        <h1 class="map_title">Map</h1>
+        <div class="map-container">
+            <div id="map"></div>
+            <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+                integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+            <script>
+                var map = L.map('map').setView([35.696060, 139.772052], 11.);
+
+                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+
+                L.marker([35.696060, 139.772052]).addTo(map)
+                    .bindPopup('Our main HQ')
+                    .openPopup();
+
+                L.marker([35.698083, 139.707032]).addTo(map)
+                    .bindPopup('Shinjuku Area Office')
+                    .openPopup();
+
+                L.marker([35.648806, 139.737300]).addTo(map)
+                    .bindPopup('Minato Station')
+                    .openPopup();
+
+                L.marker([35.636267, 139.687513]).addTo(map)
+                    .bindPopup('Meguro Station')
+                    .openPopup();
+
+                L.marker([35.647690, 139.822577]).addTo(map)
+                    .bindPopup('Meguro Station')
+                    .openPopup();
+
+                L.marker([35.686050, 139.879458]).addTo(map)
+                    .bindPopup('Edogawa Station')
+                    .openPopup();
+
+                L.marker([35.749171, 139.846954]).addTo(map)
+                    .bindPopup('Katsushika Station')
+                    .openPopup();
+            </script>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer_container">
+            <p>&copy; 2025 Tokyo Expressway. All rights reserved.</p>
+            <ul class="footer_links">
+                <li><a href="https://www.placeholder.vc/privacy-policy">Privacy Policy</a></li>
+                <li><a href="https://generator.lorem-ipsum.info/terms-and-conditions">Terms of Service</a></li>
+                <li><a href="https://www.linkedin.com/in/achraf-alla-531492285/">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
